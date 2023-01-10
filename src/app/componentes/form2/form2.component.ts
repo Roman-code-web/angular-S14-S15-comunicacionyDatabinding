@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./form2.component.css']
 })
 export class Form2Component {
+  tituloFrm2="DataBinding Actividad 2";
   concepto!:string;
 }
