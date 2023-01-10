@@ -1,0 +1,24 @@
+<div class="container px-0  py-3">
+    <div class="container d-flex  flex-column justify-content-center">
+        <h1 class="text-center fw-bold fs-1 my-5 ">DataBinding Actividad 1</h1>
+        <div class="row d-flex justify-content-center pb-5">
+            <div class="col-md-6 col-sm-8 col-xs-12 border border-primary">
+                <form class="my-3 p-3" >
+                    <div class="container">
+                      <p class=" text-center fw-bold">Event Binding</p>
+                      <button class="w-100 btn btn-primary" (click)="MostrarOcultar()" >{{nombreBtn}}</button>
+                    </div>
+                </form>
+                <div class="container">
+                    <div class="card py-3" [hidden]="hidden">
+                        <img src="https://img.icons8.com/fluency/512/angularjs.png" style="width: 20%; margin: auto;" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Event Binding </h5>
+                          <p>Interracción:event binding Usuario:interacciones Event binding. Cuando un usuario interactúa con un enlace, pulsa un botón, selecciona un evento de una lista desplegable o manipula el texto, es importante que la aplicación pueda reaccionar a estos diferentes eventos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
