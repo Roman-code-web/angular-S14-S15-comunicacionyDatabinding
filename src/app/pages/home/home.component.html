@@ -1,12 +1,14 @@
-<div class="container px-0  py-3">
+<div class="container-fluid px-0  py-2 bg__padre bg-opacity-25">
     <div class="container d-flex  flex-column justify-content-center">
         <h1 class="text-center fw-bold fs-1 my-5 ">Componente Padre</h1>
         <div class="row d-flex justify-content-center pb-5">
-            <div class="col-md-6 col-sm-8 col-xs-12 border border-primary">
+            <div class="col-md-6 col-sm-8 col-xs-12 border__col bg-light rounded-5">
                 <form class="my-3 p-3" >
                     <div class="">
-                      <label for="palabra" class="form-label fw-bold">Palabra</label>
-                      <input type="text" class="form-control" id="palabra" name="palabra" placeholder="Escribe una palabra" [(ngModel)]="palabra"  >
+                        <div class="form-floating">
+                            <input type="text" class="form-control border-primary border-opacity-25" id="palabra" name="palabra" placeholder="Escribe una palabra" [(ngModel)]="palabra"  >
+                            <label for="palabra" class="form-label">Escribe una palabra</label>
+                        </div>    
                     </div>
                 </form>
             </div>
@@ -15,5 +17,4 @@
     </div>
 </div>
 <app-hijo [resultadoHijo]="palabra"></app-hijo>
-<app-form1></app-form1>
-<app-form2></app-form2>
+
