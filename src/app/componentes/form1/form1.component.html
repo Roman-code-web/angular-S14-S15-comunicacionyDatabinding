@@ -1,16 +1,18 @@
 
-    <div class="container d-flex  flex-column justify-content-center">
+    <div class="container d-flex  flex-column justify-content-center border__column rounded-5 bg-light">
         <h1 class="text-center fw-bold fs-2 my-5 ">{{tituloFrm1}}</h1>
         <div class="row d-flex justify-content-center">
-            <div class="col-md-12 col-sm-12 col-xs-12  border__column rounded-5">
+            <div class="col-md-12 col-sm-12 col-xs-12  ">
+                <!----------form--------->
                 <form class="my-3 p-3" >
                     <div class="container">
                       <p class="fs-5 text-center fw-bold">Event Binding</p>
-                      <button class="w-100 btn {{color}}" (click)="MostrarOcultar()"  >{{nombreBtn}}</button>
+                      <button class="w-100  btn {{color}}" (click)="MostrarOcultar()"  >{{nombreBtn}}</button>
                     </div>
                 </form>
+                <!----------resultado--------->
                 <div class="container">
-                    <div class="card py-3" [hidden]="hidden">
+                    <div class="card mb-3 py-3" [hidden]="hidden">
                         <div class="card-body">
                           <h5 class="card-title"><img src="https://img.icons8.com/fluency/512/angularjs.png" style="width: 10%; margin: auto;" class="card-img-top" alt="...">Event Binding </h5>
                           <p style="text-align: justify;">Interracción:event binding Usuario:interacciones Event binding.  Cuando un usuario interactúa con un enlace, pulsa un botón, selecciona un evento de una lista desplegable o manipula el texto, es importante que la aplicación pueda reaccionar a estos diferentes eventos.</p>
