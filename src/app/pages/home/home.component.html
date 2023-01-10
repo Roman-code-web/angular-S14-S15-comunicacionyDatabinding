@@ -1,4 +1,4 @@
-<div class="container-fluid px-0  py-3 bg-primary bg-opacity-50">
+<div class="container px-0  py-3">
     <div class="container d-flex  flex-column justify-content-center">
         <h1 class="text-center fw-bold fs-1 my-5 ">Componente Padre</h1>
         <div class="row d-flex justify-content-center pb-5">
@@ -6,7 +6,7 @@
                 <form class="my-3 p-3" >
                     <div class="">
                       <label for="palabra" class="form-label fw-bold">Palabra</label>
-                      <input type="text" class="form-control" id="palabra" name="palabra" placeholder="Escribe una palabra" >
+                      <input type="text" class="form-control" id="palabra" name="palabra" placeholder="Escribe una palabra" [(ngModel)]="palabra"  >
                     </div>
                 </form>
             </div>
@@ -14,4 +14,4 @@
        
     </div>
 </div>
-<app-hijo></app-hijo>
+<app-hijo [resultadoHijo]="palabra"></app-hijo>
