@@ -5,11 +5,11 @@
             <div class="col-md-6 col-sm-8 col-xs-12 border border-primary">
                 <form class="my-3 p-3" >
                     <div class="mb-3">
-                        <input type="text" class="form-control" id="dataB" name="dataB" placeholder="Escribe el concepto" >
+                        <textarea type="text" class="form-control" id="concepto" name="concepto" placeholder="Escribe el concepto" [(ngModel)]="concepto"  ></textarea>
                     </div>
                     <div class="mb-3">
                       <p for="dataB" class=" fw-bold">Two way Binding</p>
-                      <p></p>
+                      <p>{{concepto}}</p>
                     </div>
                 </form>
             </div>

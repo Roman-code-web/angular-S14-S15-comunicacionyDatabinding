@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./form2.component.css']
 })
 export class Form2Component {
-
+  concepto!:string;
 }
